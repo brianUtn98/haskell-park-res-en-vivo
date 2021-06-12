@@ -61,8 +61,8 @@ correrTests = hspec $ do
       it "persona no esta contenta al visitar varias atracciones" $ do
         estaContenta [montañaRusa 20 20,caidaLibre 10,mundoMaya] leopoldo `shouldBe` False
 
-  -- describe "personas infinitas" $ do
-  --   describe "personas infinitas" $ do
-  --     it "se puede procesar lista infinita por lazy evaluation" $ do
-  --       nombre (h (estaContenta todas) personasInfinitas) `shouldBe` "Ana"
+  describe "personas infinitas" $ do
+    describe "personas infinitas" $ do
+      it "se puede procesar lista infinita por lazy evaluation" $ do
+        nombre (h (estaContenta todas) personasInfinitas) `shouldBe` "Ana"
 
